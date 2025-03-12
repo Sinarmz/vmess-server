@@ -1,0 +1,22 @@
+{
+  "log": {"loglevel": "warning"},
+  "inbounds": [
+    {
+      "port": 8080,
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {"id": "UUID-خودت", "alterId": 0},
+          {"id": "UUID-دوست-۱", "alterId": 0},
+          {"id": "UUID-دوست-۲", "alterId": 0}
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "auto",
+        "wsSettings": {"path": "/secret-path"}
+      }
+    }
+  ],
+  "outbounds": [{"protocol": "freedom"}]
+}
